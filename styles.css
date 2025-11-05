@@ -4,11 +4,7 @@
     transition: color 0.3s ease-in-out;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: pink;
-    border-radius: 20px;
+    
 }
 .link:hover{
     color: green;
@@ -17,5 +13,5 @@
     font-size: 40px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
+
 }
