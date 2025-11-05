@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    cursor: url('cursor.png'),  auto;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    background-color: rgb(243, 242, 240);
+    margin: 5%;
+    
+}
+.left{
+    width: 25%;
+    height: 100%;
+    position:fixed;
+    bottom:0;
+    overflow-y: scroll;
+}
+.left::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar entirely */
+}
+.mid{
+    margin-left: 25%;
+    width: 50%;
+    height: 100%;
+    font-size: 70px;
+    font-family: "oculi-display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 120%;
+    color: rgb(18, 18, 18);
+}
+.right{
+    width: 25%;
+    height: 100%;
+    position:fixed;
+    bottom:0;
+    overflow-y: scroll;
+    right:5%;
+}
+.right::-webkit-scrollbar {
+  display: none;
+}
+#bottom-mid{
+    margin-top: 0px;
+    padding: 8%;
+}
+#title{
+    font-size: 250px;
+    line-height: 80%;
+    font-family: "p22-flw-midway-one", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:rgb(18, 18, 18);
+    margin-left: -200px;
+    margin-right: -40px;
+}
+#little-text-1{
+    color: rgb(63, 129, 220);
+    font-family: "oculi-display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 120%;
+    line-height: 90%;
+    font-size: 20px;
+    padding-left: 100px;
+    margin-top: 300px;
+    text-align: right;
+
+}
+#little-text-2{
+    color: rgb(63, 129, 220);
+    font-family: "oculi-display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 120%;
+    line-height: 90%;
+    font-size: 20px;
+    padding-right: 100px;
+    margin-top: 20px;
+    text-align: right;
+}
+#little-text-3{
+    color: rgb(63, 129, 220);
+    font-family: "oculi-display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 120%;
+    line-height: 90%;
+    font-size: 20px;
+    padding-right: 100px;
+    padding-top: 80px;
+}
+#little-text-4{
+    color: rgb(63, 129, 220);
+    font-family: "oculi-display", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 120%;
+    line-height: 90%;
+    font-size: 20px;
+    padding-left: 100px;
+}
+#little-text-1:hover, #little-text-2:hover, #little-text-3:hover, #little-text-4:hover{
+    color:rgb(240, 133, 25);
+    transition: color 0.5s ease-in-out;
+    font-size: 30px;
+    transition: font-size 0.5s ease-in-out;
+}

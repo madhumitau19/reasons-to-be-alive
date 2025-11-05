@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-size: 13px;
+    margin: 4px;
+    min-height: 100%;
+    background-color: rgb(20, 20, 20);
+}
+@font-face{
+    font-family: Rayando;
+    src: url(/Users/madhu/Desktop/Second Year College/Interaction 1/Entry 2- Draft 1/Rayando-xj18.ttf);
+}
+@font-face{
+    font-family: InkBlot;
+    src: url(/Users/madhu/Desktop/Second Year College/Interaction 1/Entry 2- Draft 1/InkBlot Normal.ttf);
+}
+@font-face{
+    font-family: Battle;
+    src: url(/Users/madhu/Desktop/Second Year College/Interaction 1/Entry 2- Draft 1/TheBattleCont.ttf);
+}
+#title{
+    position: fixed;
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 250px;
+    letter-spacing: -15px;
+    text-transform: uppercase;
+    line-height: 70%;
+    bottom: 0;
+    display: flex;
+    width: 70%;
+    z-index: -1;
+    color: rgb(248, 41, 0);
+}
+
+
+.type{    
+    font-family: secret-service-typewriter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(240, 237, 225);
+}
+.main-reason{
+    position: fixed;
+    width: 32%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 20vh;
+}
+.two{
+    margin-left: 32%;
+    width: 17%;
+    height: 100%;
+    padding: 10px;
+}
+.three{
+    width: 17%;
+    height: 100%;
+    margin-top: 20vh;
+    padding: 10px;
+}
+.four{
+    width: 17%;
+    height: 100%;
+    margin-top: 40vh;
+    padding: 10px;
+}
+.five{
+    width: 17%;
+    height: 100%;
+    margin-top: 60vh;
+    padding: 10px;
+}
+
+#who{
+    margin-top: 10px;
+}
+#expanded{
+    font-size: 17px;
+}
+
+.image{
+    background-image: url('Ellis Image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 472.4px;
+    min-height: 555.1px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: -2;
+    transform: rotate(-2deg);
+}
+
+.main-reason:hover ~ .image{
+    background-image: url('Ellis Image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 472.4px;
+    min-height: 555.1px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: -2;
+    transform: rotate(-2deg);
+}
+.two:hover ~ .image{
+    background-image: url('Ada Image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 472.4px;
+    min-height: 555.1px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: -2;
+    transform: rotate(1deg);
+}
+.three:hover ~ .image{
+    background-image: url('Eva Image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 472.4px;
+    min-height: 555.1px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: -2;
+    transform: rotate(-1deg);
+}
+.four:hover ~ .image{
+    background-image: url('Jamie Image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 472.4px;
+    min-height: 555.1px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: -2;
+    transform: rotate(-3deg);
+}
+.five:hover ~ .image{
+    background-image: url('Me Image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 472.4px;
+    min-height: 555.1px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: -2;
+    transform: rotate(-1deg);
+}
+.main-reason:hover, .two:hover, .three:hover, .four:hover, .five:hover{
+    color: rgb(8, 98, 189);
+}

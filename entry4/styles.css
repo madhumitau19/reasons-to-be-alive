@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+@font-face{
+    font-family: 'TheBattle';
+    src: url('TheBattleCont.ttf') format('truetype');
+}
+body{
+    background-color: rgb(25, 25, 25);
+}
+
+.one-piece-container{
+    display: flex;
+    margin: 30px 30px 4px 30px;
+    height: 200px;
+}
+.character{
+    width: 20%;
+    transition: width 0.5s ease-in-out;
+    margin: 2px;
+    border-radius: 20px;
+    height: 200px;
+    overflow: hidden;
+    background-image: linear-gradient(to top,  rgb(255, 68, 0), rgba(255, 153, 51, 0));
+    display: flex;
+    justify-content: center;
+}
+.character-img{
+    height: 100%;
+}
+.character:hover{
+    width: 40%;
+}
+.luf:hover ~ .nam, .luf:hover ~ .ror, .luf:hover ~ .vin, .luf:hover ~ .uso{
+    width: 15%;
+}
+.nam:hover ~ .luf, .nam:hover ~ .ror, .nam:hover ~ .vin, .nam:hover ~ .uso{
+    width: 15%;
+}
+.ror:hover ~ .luf, .ror:hover ~ .nam, .ror:hover ~ .vin, .ror:hover ~ .uso{
+    width: 15%;
+}
+.uso:hover ~ .luf, .uso:hover ~ .ror, .uso:hover ~ .vin, .uso:hover ~ .nam{
+    width: 15%;
+}
+.vin:hover ~ .luf, .ivn:hover ~ .ror, .vin:hover ~ .nam, .vin:hover ~ .uso{
+    width: 15%;
+}
+
+.row-two{
+    display: flex;
+    height: 250px;
+    margin: 30px 30px 4px 30px;
+    align-items: center;
+    justify-content: space-evenly; 
+    background-image: linear-gradient(to top,  rgb(255, 68, 0), rgba(255, 153, 51, 0)); 
+    border-radius: 30px;
+    padding: 10%;
+}
+.title{
+    font-family: TheBattle;
+    background-color: rgba(0, 255, 255, 0);
+    color: yellow;
+    font-size: clamp(40px, 15vw, 200px);
+    width: 20%;
+    line-height: 70%;
+    margin-right: 30%;
+}
+.description{
+    background-color: rgba(0, 255, 255, 0);
+    color: yellow;
+    width: 50%;
+    text-align: justify;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 110%;
+    margin-bottom: 16px;
+    margin-top: 16px; 
+    margin-right: 16px;
+}
+#desc-text{
+    margin-bottom: 10px;
+    width: 100%;
+    letter-spacing: 0.1px;
+}
+.two{
+    margin-top: 2px;
+}
+
+.labels{
+    display: flex;
+    margin: 10px 30px 5px 30px;
+}
+.label{
+    width: 20%;
+    text-align: center;
+    color: rgb(255, 68, 0);
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+}
+.trailer-container{
+    margin: 10px 30px 30px 30px; 
+}
+.trailer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 30px;
+    border: solid 2px yellow;
+}
+.trailer-video{
+    width: 100%;
+}
+.link{
+    text-align: center;
+    margin: 30px 80px; 
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: yellow;
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    transition: color 0.1s ease-in-out;
+    
+}
+.section-2{
+    display: flex;
+    margin: 20px 30px 30px 30px;
+}
+.my-text{
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: yellow;
+    background-image: linear-gradient(to top, rgba(255, 0, 157, 0), rgb(0, 166, 255));
+    padding: 60px;
+    border-radius: 30px;
+    width: 33.33%;
+    margin-right: 2px;
+    font-size: clamp(12px, 20vw, 12px)
+}
+.second{
+    margin-left: 2px;
+    background-image: linear-gradient(to bottom, rgb(216, 4, 139), rgba(255, 153, 51, 0));
+    text-align: left;
+}
+.third{
+    margin-left: 2px;
+    background-image: linear-gradient(to bottom, rgb(142, 4, 216), rgba(255, 153, 51, 0));
+    text-align: left;
+}
+.link:hover{
+    background-color: rgb(255, 60, 0);
+}

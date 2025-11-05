@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#vid-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+#vid{
+    width: 100%;
+}
+#title{
+    color: rgb(255, 238, 0);
+    text-align: center;
+    font-family: "oddity-script", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1050%;
+    margin-top: -70px;
+}
+#play{
+    color: rgb(255, 238, 0);
+    position: fixed;
+    top: 115px;
+    left: 33%;
+    font-family: "salted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: rotate(-6deg);
+    font-size: 130%;
+}
+.folder-icon{
+    width: 100px;
+    height: 130px;
+}
+.icon-image{
+    max-width: 100%;
+}
+.label-text{
+    color: rgb(237, 237, 237);
+    font-family: helvetica;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -13px;
+    font-weight: bold;
+}
+#ada-icon{
+    position: fixed;
+    top: 200px;
+    left: 20%;
+}
+#ada-text{
+    position: fixed;
+    top: 300px;
+    left: 5%;
+    width: 15%;
+    display: none;
+    text-align: right;
+}
+#ada-icon:active ~ #ada-text{
+    display: block;
+}
+#delat-icon{
+    position: fixed;
+    top: 300px;
+    right: 20%;
+}
+#delat-text{
+    position: fixed;
+    top: 350px;
+    right: 5%;
+    width: 15%;
+    display: none;
+}
+#delat-icon:active ~ #delat-text{
+    display: block;
+}
+#julia-icon{
+    position: fixed;
+    top: 500px;
+    left: 40%;
+}
+#julia-text{
+    position: fixed;
+    overflow-y: scroll;
+    top: 500px;
+    right: 38%;
+    width: 15%;
+    display: none;
+}
+#julia-icon:active ~ #julia-text{
+    display: block;
+}
+
+.memory{
+    color: rgb(255, 238, 0);
+    font-family: Helvetica, sans-serif;
+    font-size: 80%;
+    font-weight: 550;
+    text-shadow: 1px 0.5px 3px black; 
+}
+.photo{
+
+}
+#ada-photo{
+    width: 200px;
+    height: 250px; 
+    position: fixed;
+    left: 310px;
+    top: 450px;
+    display: none;
+}
+#ada-icon:active ~ #ada-photo{
+    display: block;
+}
+#delat-photo{
+    width: 200px;
+    height: 250px; 
+    position: fixed;
+    right: 310px;
+    top: 460px;
+    display: none;
+}
+#delat-icon:active ~ #delat-photo{
+    display: block;
+}
+#julia-photo{
+    width: 200px;
+    height: 250px; 
+    position: fixed;
+    left:960px;
+    top: 450px;
+    display: none;
+}
+#julia-icon:active ~ #julia-photo{
+    display: block;
+}
+
+img{
+    width: 130%;
+}
