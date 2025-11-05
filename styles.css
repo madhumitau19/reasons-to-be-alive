@@ -4,7 +4,11 @@
     transition: color 0.3s ease-in-out;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: pink;
+    border-radius: 20px;
 }
 .link:hover{
     color: green;
