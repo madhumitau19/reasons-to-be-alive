@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(cursor.png), auto;
+}
+body{
+    background-color: black;
+}
+.body{
+    display: flex;
+    scroll-behavior: smooth; 
+}
+.circle{
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    height: 70vh;
+    aspect-ratio:  1 / 1;
+    background-color: rgb(0, 0, 23);
+    z-index: -2;
+    background-image: url(circle.JPG);
+    background-size: cover;
+    border-radius: 50%;
+}
+.left{
+    height: 100%;
+    width: 80%;
+}
+.right{
+    width: 20%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+    border: solid 2px #ffb406;
+}
+.one{
+    margin-top: 120px;
+    margin-left: 25%;
+    background-color: rgb(228, 52, 152);
+    background-image: url(image-1.jpg);
+    background-size: cover;
+}
+.two{
+    margin-top: -200px;
+    margin-left: 15%;
+    background-color: rgb(52, 187, 228);
+    background-image: url(image-2.jpg);
+    background-size: cover;
+}
+.three{
+    margin-top: -200px;
+    margin-left: 7%;
+    background-color: rgb(228, 161, 52);
+    background-image: url(image-3.jpg);
+    background-size: cover;
+}
+.four{
+    margin-top: -150px;
+    margin-left: 12%;
+    background-image: url(image-4.jpg);
+    background-size: cover;
+    background-color: rgb(52, 228, 207);
+}
+.five{
+    margin-top: -180px;
+    margin-left: 19%;
+    background-image: url(image-5.jpg);
+    background-size: cover;
+    background-color: rgb(228, 75, 52);
+}
+.six{
+    margin-top: -200px;
+    margin-left: 25%;
+    background-image: url(image-6.jpg);
+    background-size: cover;
+    background-color: rgb(70, 228, 52);
+}
+.seven{
+    margin-top: -200px;
+    margin-left: 35%;
+    background-image: url(image-7.jpg);
+    background-size: cover;
+    background-color: rgb(228, 52, 93);
+}
+.eight{
+    margin-top: -200px;
+    margin-left: 45%;
+    background-image: url(image-8.jpg);
+    background-size: cover;
+    background-color: rgb(137, 52, 228);
+}
+.nine{
+    margin-top: -200px;
+    margin-left: 60%;
+    background-image: url(image-9.jpg);
+    background-size: cover;
+    background-color: rgb(221, 117, 198);
+}
+.ten{
+    margin-top: -200px;
+    margin-left: 65%;
+    background-image: url(image-10.jpg);
+    background-size: cover;
+    background-color: rgb(228, 75, 52);
+}
+.eleven{
+    margin-top: -170px;
+    margin-left: 70%;
+    background-image: url(image-11.jpg);
+    background-size: cover;
+    background-color: rgb(77, 140, 9);
+}
+.twelve{
+    margin-top: -140px;
+    margin-left: 67%;
+    background-image: url(image-12.jpg);
+    background-size: cover;
+    background-color: rgb(52, 228, 213);
+}
+.thirteen{
+    margin-top: -200px;
+    margin-left: 63%;
+    background-image: url(image-13.jpg);
+    background-size: cover;
+    background-color: rgb(228, 146, 52);
+}
+.fourteen{
+    margin-top: -200px;
+    margin-left: 58%;
+    background-image: url(image-14.jpg);
+    background-size: cover;
+    background-color: rgb(228, 52, 163);
+}
+.fifteen{
+    margin-top: -220px;
+    margin-left: 48%;
+    background-image: url(image-15.jpg);
+    background-size: cover;
+    background-color: rgb(111, 52, 228);
+}
+.sixteen{
+    margin-top: -200px;
+    margin-left: 40%;
+    background-image: url(image-16.jpg);
+    background-size: cover;
+    background-color: rgb(104, 177, 21);
+}
+.seventeen{
+    margin-top: -200px;
+    margin-left: 32%;
+    background-image: url(image-17.jpg);
+    background-size: cover;
+    background-color: rgb(52, 228, 213);
+}
+.eighteen{
+    margin-top: -230px;
+    margin-left: 25%;
+    background-image: url(image-18.jpg);
+    background-size: cover;
+    background-color: rgb(228, 90, 52);
+}
+.nineteen{
+    margin-top: -220px;
+    margin-left: 20%;
+    background-image: url(image-19.jpg);
+    background-size: cover;
+    background-color: rgb(125, 228, 52);
+}
+.twenty{
+    margin-top: -230px;
+    margin-left: 15%;
+    background-image: url(image-20.jpg);
+    background-size: cover;
+    background-color: rgb(184, 52, 228);
+}
+.twenty-one{
+    margin-top: -210px;
+    margin-left: 10%;
+    background-image: url(image-21.jpg);
+    background-size: cover;
+    background-color: rgb(52, 119, 228);
+}
+.twenty-two{
+    margin-top: -200px;
+    margin-left: 7%;
+    background-image: url(image-22.jpg);
+    background-size: cover;
+    background-color: rgb(228, 90, 52);
+    margin-bottom: 1600px;
+}
+.text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20%;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px; 
+    color: #ffb406; 
+    line-height: 120%;
+}
+.no-2, .no-3, .no-4{
+    margin-top: 900px;
+}
+.no-1{
+    margin-top: 40px;
+}
+.background{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1000;
+    opacity: 0%;
+    transition: opacity 0.3s ease-in-out;
+}
+.background img{
+    min-width: 100%;
+    min-height: 100vh;
+    ;
+}
+
+.one:hover ~ #img-one, .two:hover ~ #img-two, .three:hover ~ #img-three, .four:hover ~ #img-four, .five:hover ~ #img-five, .six:hover ~ #img-six, .seven:hover ~ #img-seven, .eight:hover ~ #img-eight, .nine:hover ~ #img-nine, .ten:hover ~ #img-ten, .eleven:hover ~ #img-eleven, .twelve:hover ~ #img-twelve, .thirteen:hover ~ #img-thirteen, .fourteen:hover ~ #img-fourteen, .fifteen:hover ~ #img-fifteen, .sixteen:hover ~ #img-sixteen, .seventeen:hover ~ #img-seventeen, .eighteen:hover ~ #img-eighteen, .nineteen:hover ~ #img-nineteen, .twenty:hover ~ #img-twenty, .twenty-one:hover ~ #img-twenty-one, .twenty-two:hover ~ #img-twenty-two{
+    opacity: 100%;
+    z-index: -1;
+    filter: blur(10px)
+}
+.one:hover ~ .img, .two:hover ~ .img, .three:hover ~ .img, .four:hover ~ .img, .five:hover ~ .img, .six:hover ~ .img, .seven:hover ~ .img, .eight:hover ~ .img, .nine:hover ~ .img, .ten:hover ~ .img, .eleven:hover ~ .img, .twelve:hover ~ .img, .thirteen:hover ~ .img, .fourteen:hover ~ .img, .fifteen:hover ~ .img, .sixteen:hover ~ .img, .seventeen:hover ~ .img, .eighteen:hover ~ .img, .nineteen:hover ~ .img, .twenty:hover ~ .img, .twenty-one:hover ~ .img, .twenty-two:hover ~ .img{
+    opacity: 0;
+}
+
+
+.crayon{
+    position: fixed;
+    width: 90px;
+    height: 90px;
+}
+#t img, #h img, #o img, #e img, #d img, #r img, #e-2 img, #a img, #m img, #s-2 img{
+    height: 100%;
+}
+#s img{
+    width: 100%;
+}
+#t{
+    top: 10px;
+    left: 5%;
+    height: 120px;
+}
+#h{
+    top: 10px;
+    left: 20%;
+}
+#o{
+    top: 60px;
+    left: 40%;
+    height: 60px;
+}
+#s{
+    top: 150px;
+    left: 50%;
+    width: 70px;
+    transform: rotate(10deg);
+}
+#e{
+    top: 250px;
+    left: 60%;
+    height: 50px;
+}
+#d{
+    top: 300px;
+    left: 43%;
+    height: 120px;
+}
+#r{
+    top: 400px;
+    left: 55%;
+}
+#e-2{
+    top: 430px;
+    left: 60%;
+}
+#a{
+    top: 490px;
+    left: 65%;
+}
+#m{
+    top: 530px;
+    left: 73%;
+    height: 70px;
+}
+#s-2{
+    top: 600px;
+    left: 78%;
+    height: 70px;
+    width: 40px;
+}
+
