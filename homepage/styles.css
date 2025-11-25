@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.reason-circle{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    position: fixed;
+    z-index: -1;
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: transform 1s ease-in-out;
+}
+.reason-circle:hover{
+    transform: scale(150%);
+}
+.one{
+    top: 40%;
+    left: 25%;
+}
+.two{
+    top: 50%;
+    left: 60%;
+}
+.three{
+    top: 30%;
+    left: 40%;
+}
+.four{
+    top: 20%;
+    left: 70%;
+}
+.five{
+    top: 60%;
+    left: 35%;
+}
+.six{
+    top: 70%;
+    left: 50%;
+}
+
+.description{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(218, 31, 171);
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+.description:active{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    margin: 0;
+}
+.description:hover{
+    transform: scale(120%);
+    cursor: pointer;
+}
+
+.description:active ~ .title{
+    display: none;
+}
+
+.title{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color:rgb(218, 31, 171);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    height: 40px;
+    margin: auto;
+    padding: 10px 10px 0px 10px;
+}
+
+@keyframes glow{
+    0%{
+        filter: blur(0);
+    }
+    50%{
+        filter: blur(4px);
+    }
+    100%{
+        filter: blur(0);
+    }
+}
+
+.reason-text{
+   text-align: left; 
+   color:rgb(218, 31, 171);
+   font-family: "Playfair Display", serif;
+   font-optical-sizing: auto;
+   font-weight: 200;
+   font-style: normal;
+   font-size: 13px;
+   text-decoration: none;
+   position: fixed;
+   opacity: 0;
+   transition: all 2s ease-in-out;
+   width: 200px;
+   padding-left: 15px
+}
+
+a{
+    text-decoration: none;
+}
+
+.one:hover ~ .text-one,
+.two:hover ~ .text-two,
+.three:hover ~ .text-three,
+.four:hover ~ .text-four,
+.five:hover ~ .text-five,
+.six:hover ~ .text-six{
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.text-one{
+    top: 38%;
+    left: 30%;
+}
+.text-two{
+    top: 48%;
+    left: 65%;
+}
+.text-three{
+    top: 28%;
+    left: 45%;
+}
+.text-four{
+    top: 18%;
+    left: 75%;
+}
+.text-five{
+    top: 58%;
+    left: 40%;
+}
+.text-six{
+    top: 68%;
+    left: 55%;
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(218, 31, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.info{
+    color: white;
+    font-family: "Playfair Display", serif;
+    position: fixed;
+    width: 60%;
+    font-size: 25px;
+    line-height: 110%;
+}
+.info p{
+    margin-bottom: 30px;
+}
+.info span{
+    font-style: italic;
+}
+
+.home-icon{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+.home-icon:active{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    margin: 0;
+    background-color: black;
+}
+.home-icon:hover{
+    transform: scale(120%);
+    cursor: pointer;
+}

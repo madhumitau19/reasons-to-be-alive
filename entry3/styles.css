@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+.home-icon{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(255, 238, 0);
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    z-index: 2000;
+    top: 10px;
+    left: 10px;
+}
+.home-icon:hover{
+    transform: scale(120%);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+}
+
 #vid-container{
     position: fixed;
     top: 0;

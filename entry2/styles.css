@@ -10,6 +10,24 @@ body{
     min-height: 100%;
     background-color: rgb(20, 20, 20);
 }
+
+.home-icon{
+    width: 40px;
+    height: 40px;
+    background-color:rgb(240, 237, 225);
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    z-index: 2000;
+    top: 10px;
+    left: 10px;
+}
+.home-icon:hover{
+    transform: scale(120%);
+    background-color: rgb(8, 98, 189);
+    transition: all 0.5s ease-in-out;
+}
+
 @font-face{
     font-family: Rayando;
     src: url(/Users/madhu/Desktop/Second Year College/Interaction 1/Entry 2- Draft 1/Rayando-xj18.ttf);

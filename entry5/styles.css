@@ -11,6 +11,24 @@ body{
     display: flex;
     scroll-behavior: smooth; 
 }
+
+.home-icon{
+    width: 40px;
+    height: 40px;
+    background-color:#ffb406;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    z-index: 2000;
+    top: 10px;
+    left: 10px;
+}
+.home-icon:hover{
+    transform: scale(120%);
+    background-color: rgb(255, 68, 0);
+    transition: all 0.5s ease-in-out;
+}
+
 .circle{
     position: fixed;
     top: 15%;
