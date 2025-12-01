@@ -119,62 +119,128 @@ body{
     background-image: url('Ellis Image.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 472.4px;
-    min-height: 555.1px;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: -2;
     transform: rotate(-2deg);
 }
 .two:hover ~ .image{
     background-image: url('Ada Image.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 472.4px;
-    min-height: 555.1px;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: -2;
     transform: rotate(1deg);
 }
 .three:hover ~ .image{
     background-image: url('Eva Image.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 472.4px;
-    min-height: 555.1px;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: -2;
     transform: rotate(-1deg);
 }
 .four:hover ~ .image{
     background-image: url('Jamie Image.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 472.4px;
-    min-height: 555.1px;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: -2;
     transform: rotate(-3deg);
 }
 .five:hover ~ .image{
     background-image: url('Me Image.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 472.4px;
-    min-height: 555.1px;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: -2;
     transform: rotate(-1deg);
 }
 .main-reason:hover, .two:hover, .three:hover, .four:hover, .five:hover{
     color: rgb(8, 98, 189);
+}
+
+/* Mobile */
+
+@media screen and (max-width:400px){
+    body{
+        display: block;
+        font-size: 13px;
+        margin: 0px;
+        min-height: 100%;
+        background-color: rgb(20, 20, 20);
+        width: 100vw;
+    }
+
+    #title{
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        font-family: "futura-pt-condensed", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 27vw;
+        letter-spacing: -5px;
+        width: 100%;
+        z-index: -1;
+        color: rgb(248, 41, 0);
+        margin-right: 20px;
+    }
+
+
+    .type{    
+        font-family: secret-service-typewriter, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgb(240, 237, 225);
+    }
+    .main-reason{
+        position: static;
+        width: 100vw;
+        height: fit-content;
+        padding: 0;
+        margin-top: 45vh;
+        margin-left: 10px;
+        z-index: -3;
+    }
+    .two{
+        margin-left: 20px;
+        width: calc(100% - 20px);
+        height: fit-content;
+        padding: 0px;
+        margin-top: 300px;
+    }
+    .three{
+        width: calc(100% - 30px);
+        margin-left: 30px;
+        height: fit-content;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .four{
+        margin-left: 40px;
+        width: calc(100% - 40px);
+        height: fit-content;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .five{
+        margin-left: 50px;
+        width: calc(100% - 50px);
+        height: fit-content;
+        margin-top: 50px;
+        padding: 0px;
+        margin-bottom: 280px;
+    }
+
+    #who{
+        margin-top: 9px;
+    }
+    #expanded{
+        font-size: 15px;
+    }
+
+    .image{
+        background-image: url('Ellis Image.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 200px;
+        aspect-ratio: 472.4 / 555.1;
+        min-height: 100px;
+        min-width: 100px;
+        position: fixed;
+        right: 5px;
+        top: 10px;
+        z-index: 1;
+        transform: rotate(-2deg);
+    }
 }
