@@ -236,6 +236,10 @@ body{
     height: 120px;
     margin: auto;
     padding: 10px 10px 10px 10px;
+    display: flex;
+}
+.space{
+    width: 15px;
 }
 
 @keyframes glow{
@@ -336,3 +340,147 @@ a{
     scale: 90%;
 }
 
+/* Mobile */
+
+@media screen and (max-width:400px){
+    body{
+        background-color: black;
+        display: block;
+        position: relative;
+        height: 100vh;
+    }
+    .circles{
+        width: fit-content;;
+        height: fit-content;
+        margin: 0;
+        z-index: 5;
+        display: flex;
+        margin: 60px auto;
+    }
+    .reason-circle{
+        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    .reason-circle:active{
+        transform: scale(50%);
+    }
+    .one{
+    }
+    .two{
+        animation-delay: 0s, 1s;
+        margin-left: 0;
+        width: 
+    }
+    .three{
+        animation-delay: 0s, 2s;
+        margin-left: 0%;
+    }
+    .four{
+        animation-delay: 0s, 3s;
+        margin-left: 0%;
+    }
+    .five{
+        animation-delay: 0s, 4s;
+        margin-left: 0%;
+    }
+    .six{
+        animation-delay: 0s, 5s;
+        margin-left: 0%;
+    }
+
+
+    .title{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        color: rgb(255, 255, 255);
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 60px;
+        height: fit-content;
+        margin-left: 10px;
+        padding: 0px;
+        line-height: 90%;
+        display: block;
+        text-align: left;
+        letter-spacing: -6px;
+    }
+
+    .info{
+        width: calc(100% - 20px);
+        height: fit-content;
+        margin: 0;
+        border: solid 2px rgb(218, 31, 171); 
+        border-radius: 20px;
+        display: block;
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        position: relative;
+        background-color: rgb(218, 31, 171);
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        margin-right: 10px;
+    }
+    .index{
+        height: 380px;
+        overflow-y: scroll;
+    }
+    .index-title{
+        font-size: 30px;
+        text-align: right;
+        font-style: italic;
+        margin-top: -5px;
+        padding-right: 10px;
+        border-bottom: solid 1px black;
+    }
+    .index-item{
+        font-size: 14px;
+        border-bottom: solid 1px black; 
+        padding: 5px 10px 5px 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    .index-item a{
+        transition: all 0.5s ease-in-out;
+    }
+    .index-item a:active{
+        color: white;
+        
+    }
+    .index-item:active{
+        padding: 20px 10px 20px 10px;
+    }
+
+
+    .about{
+        background-color: black;
+        width: 90%;
+        margin: auto;
+        border-radius: 25px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 10px;
+        left: 5%;
+        color: rgb(218, 31, 171);
+        font-style: italic;
+        transition: all 0.5s ease-in-out;
+    }.about:active{
+        background-color: white;
+        color:rgb(218, 31, 171);
+        scale: 90%;
+    }
+
+    
+}
