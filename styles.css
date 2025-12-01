@@ -237,6 +237,7 @@ body{
     margin: auto;
     padding: 10px 10px 10px 10px;
     display: flex;
+    letter-spacing: -9px;
 }
 .space{
     width: 15px;
