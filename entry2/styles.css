@@ -243,4 +243,39 @@ body{
         z-index: 1;
         transform: rotate(-2deg);
     }
+
+
+    .main-reason:active ~ .image{
+        background-image: url('Ellis Image.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: rotate(-2deg);
+    }
+    .two:active ~ .image{
+        background-image: url('Ada Image.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: rotate(1deg);
+    }
+    .three:active ~ .image{
+        background-image: url('Eva Image.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: rotate(-1deg);
+    }
+    .four:active ~ .image{
+        background-image: url('Jamie Image.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: rotate(-3deg);
+    }
+    .five:active ~ .image{
+        background-image: url('Me Image.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: rotate(-1deg);
+    }
+    .main-reason:active, .two:active, .three:active, .four:active, .five:active{
+        color: rgb(8, 98, 189);
+    }
 }
