@@ -13,7 +13,6 @@ body{
 .info{
     color: white;
     font-family: "Playfair Display", serif;
-    position: fixed;
     width: 60%;
     font-size: 25px;
     line-height: 110%;
@@ -23,6 +22,21 @@ body{
 }
 .info span{
     font-style: italic;
+}
+.submit{
+    color: white;
+    font-style: italic;
+    margin-top: 60px;
+    font-size: 20px
+}
+.submit a{
+    color: white;
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline;
+}
+.submit a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .home-icon{

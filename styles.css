@@ -3,47 +3,199 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face{
+    font-family: 'TheBattle';
+    src: url('TheBattleCont.ttf') format('truetype');
+}
 body{
     background-color: black;
+    display: flex;
 }
+
+.circles{
+    width: 60%;
+    height: 100vh;
+    margin-top: 60px;
+    margin-left: 60px;
+    z-index: 2;
+}
+
 .reason-circle{
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     background-color: white;
     border-radius: 100%;
-    position: fixed;
-    z-index: -1;
-    animation-name: glow;
-    animation-duration: 5s;
+    animation-name: glow, colors;
+    animation-duration: 5s, 10s;
     animation-iteration-count: infinite;
-    transition: transform 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    margin-bottom: 40px;
+    animation-timing-function: linear;
 }
 .reason-circle:hover{
-    transform: scale(150%);
+    transform: scale(50%);
 }
 .one{
-    top: 40%;
-    left: 25%;
 }
 .two{
-    top: 50%;
-    left: 60%;
+    animation-delay: 0s, 1s;
+    margin-left: 20%;
 }
 .three{
-    top: 30%;
-    left: 40%;
+    animation-delay: 0s, 2s;
+    margin-left: 40%;
 }
 .four{
-    top: 20%;
-    left: 70%;
+    animation-delay: 0s, 3s;
+    margin-left: 60%;
 }
 .five{
-    top: 60%;
-    left: 35%;
+    animation-delay: 0s, 4s;
+    margin-left: 80%;
 }
 .six{
-    top: 70%;
-    left: 50%;
+    animation-delay: 0s, 5s;
+    margin-left: 100%;
+}
+
+
+.reason-text{
+    color: white;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.text-one{
+    font-family: "p22-flw-midway-one", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    top: 70px;
+    left: 20%;
+}
+.text-two{
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 50px;
+    top: 150px;
+    left: 32%;
+    width: 200px;
+    line-height: 70%;
+    color: rgb(248, 41, 0); 
+}
+.text-three{
+    font-family: "oddity-script", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 60px;
+    top: 280px;
+    left: 45%;
+    color: rgb(255, 238, 0);
+}
+.text-four{
+    font-family: TheBattle;
+    font-size: 60px;
+    text-transform: uppercase;
+    top: 420px;
+    left: 15%;
+    color: rgb(255, 68, 0);
+}
+.text-five{
+    background-image: url('entry-5-title.png');
+    background-size: cover;
+    height: 80px;
+    width: 300px;
+    top: 540px;
+    left: 19%;
+    color: #ffb406;
+}
+.text-six{
+    font-family: roc-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    top: 640px;
+    left: 45%;
+    width: 240px;
+    line-height: 80%;
+    color: rgb(255, 0, 191);
+    animation-name: font-change;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes font-change{
+    0%{
+        font-family: "roc-grotesk", sans-serif;
+        
+    }
+    20%{
+        font-family: "cofo-sans-pixel", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    40%{
+        font-family: "scatterplot-vf", sans-serif;
+        font-variation-settings: "RAND" 0, "wght" 600;
+    }
+    60%{
+        font-family: "aquatronik-variable", sans-serif;
+        font-variation-settings: "wdth" 100;
+    }
+    80%{
+        font-family: "adhesive-nr-eight", sans-serif;
+        font-weight: 400;
+        font-style: normal;     
+    }
+    100%{
+        font-family: "roc-grotesk", sans-serif;
+    }
+}
+
+.one:hover~.text-one, .two:hover~.text-two, .three:hover~.text-three, .four:hover~.text-four, .four:hover~.text-four, .four:hover~.text-four, .five:hover~.text-five, .six:hover~.text-six{
+    display: block;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+
+.one:hover{
+    background-color: rgb(255, 255, 255);
+    animation-name: none;
+}
+.two:hover{
+    background-color: rgb(248, 41, 0);
+    animation-name: none;
+}
+.three:hover{
+    background-color: rgb(255, 238, 0);
+    animation-name: none;
+}
+.four:hover{
+    background-color: rgb(255, 68, 0);
+    animation-name: none;
+}
+.five:hover{
+    background-color: #ffb406;
+    animation-name: none;
+}
+.six:hover{
+    background-color: rgb(255, 0, 191);
+    animation-name: none;
+}
+
+@keyframes colors{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: rgb(218, 31, 171);
+    }
+    100%{
+        background-color: white;
+    }
 }
 
 .description{
@@ -80,10 +232,10 @@ body{
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-size: 15px;
-    height: 40px;
+    font-size: 100px;
+    height: 120px;
     margin: auto;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 @keyframes glow{
@@ -98,24 +250,9 @@ body{
     }
 }
 
-.reason-text{
-   text-align: left; 
-   color:rgb(218, 31, 171);
-   font-family: "Playfair Display", serif;
-   font-optical-sizing: auto;
-   font-weight: 200;
-   font-style: normal;
-   font-size: 13px;
-   text-decoration: none;
-   position: fixed;
-   opacity: 0;
-   transition: all 2s ease-in-out;
-   width: 200px;
-   padding-left: 15px
-}
-
 a{
     text-decoration: none;
+    color:black;
 }
 
 .one:hover ~ .text-one,
@@ -128,27 +265,74 @@ a{
     opacity: 1;
 }
 
-.text-one{
-    top: 38%;
-    left: 30%;
+.info{
+    width: 20%;
+    height: 700px;
+    margin: 10px;
+    border: solid 2px rgb(218, 31, 171); 
+    border-radius: 20px;
+    margin-left: auto;
+    display: block;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    background-color: rgb(218, 31, 171);
+    position: sticky;
+    top: 10px;
 }
-.text-two{
-    top: 48%;
-    left: 65%;
+.index{
+    height: 500px;
+    overflow-y: scroll;
 }
-.text-three{
-    top: 28%;
-    left: 45%;
+.index-title{
+    font-size: 60px;
+    text-align: right;
+    font-style: italic;
+    margin-top: -10px;
+    padding-right: 10px;
+    border-bottom: solid 1px black;
 }
-.text-four{
-    top: 18%;
-    left: 75%;
+.index-item{
+    font-size: 16px;
+    border-bottom: solid 1px black; 
+    padding: 5px 10px 5px 10px;
+    transition: all 0.5s ease-in-out;
 }
-.text-five{
-    top: 58%;
-    left: 40%;
+.index-item a{
+    transition: all 0.5s ease-in-out;
 }
-.text-six{
-    top: 68%;
-    left: 55%;
+.index-item a:hover{
+    color: white;
+    
 }
+.index-item:hover{
+    padding: 20px 10px 20px 10px;
+}
+
+
+.about{
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    border-radius: 25px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    color: rgb(218, 31, 171);
+    font-style: italic;
+    transition: all 0.5s ease-in-out;
+}
+
+.about:hover{
+    background-color: white;
+    color:rgb(218, 31, 171);
+    scale: 90%;
+}
+
