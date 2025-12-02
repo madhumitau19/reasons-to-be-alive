@@ -165,3 +165,49 @@
 img{
     width: 130%;
 }
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    #vid-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+    #vid{
+        height: 100vw;
+        transform: rotate(90deg);
+    }
+    #title{
+        color: rgb(255, 238, 0);
+        text-align: center;
+        font-family: "oddity-script", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 300%;
+        margin-top: 10px;
+        transform: rotate(90deg);
+    }
+    #play{
+        display: none;
+    }
+    .home-icon{
+        width: 40px;
+        height: 40px;
+        background-color:rgb(255, 238, 0);
+        border-radius: 100%;
+        transition: all 0.5s ease-in-out;
+        position: fixed;
+        z-index: 2000;
+        top: 10px;
+        right: 10px;
+        margin-left: auto;
+    }  
+}
