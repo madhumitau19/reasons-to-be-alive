@@ -181,14 +181,12 @@ img{
         font-weight: 400;
         font-style: normal;
         position: static;
-        margin-top: 320px; 
+        margin-top: 320px;
+        margin-left: calc(50% - 50px);
+        width: fit-content;
     }
     *{
         background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 @media screen and (max-width: 800px) {
     body{
