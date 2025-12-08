@@ -121,6 +121,23 @@ a{
     color:black;
 }
 
+.about-circle-text{
+    color: rgb(218, 31, 171);
+    position: fixed;
+    top: 15px;
+    left: 60px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal; 
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.description:hover ~ .about-circle-text{
+    opacity: 1;
+}
+
 .circles{
     width: 60%;
     height: 100vh;

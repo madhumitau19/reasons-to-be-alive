@@ -23,6 +23,23 @@ body{
     background-color: rgb(204, 255, 0);
     transition: all 0.5s ease-in-out;
 }
+.home-text{
+    color:rgb(255, 0, 191);
+    position: fixed;
+    top: 20px;
+    left: 60px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal; 
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+.home-icon:hover ~ .home-text{
+    opacity: 1;
+}
 
 .back-rect-container{
     width: 100%;
