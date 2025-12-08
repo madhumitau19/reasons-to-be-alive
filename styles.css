@@ -12,12 +12,125 @@ body{
     display: flex;
 }
 
+.preview{
+    background-color: rgb(255, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    z-index: -20;
+    margin: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.entry-1-preview{
+    color: white;
+    font-family: "p22-flw-midway-one", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 200px;
+    width: 700px;
+    margin-left: 100px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.entry-2-preview{
+    font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 200px;
+    top: 75px;
+    left: 100px;
+    width: 700px;
+    line-height: 70%;
+    color: rgb(248, 41, 0); 
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.entry-3-preview{
+    font-family: "oddity-script", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 150px;
+    top: 250px;
+    left: 250px;
+    color: rgb(255, 238, 0);
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.entry-4-preview{
+    font-family: TheBattle;
+    font-size: 300px;
+    text-transform: uppercase;
+    top: 150px;
+    left: 100px;
+    width: 700px;
+    color: rgb(255, 68, 0);
+    position: absolute;
+    line-height: 70%;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.entry-5-preview{
+    background-image: url('entry-5-title.png');
+    background-size: cover;
+    height: 160px;
+    width: 750px;
+    top: 250px;
+    left: 100px;
+    color: #ffb406;
+    position: absolute; 
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.entry-6-preview{
+    font-family: roc-grotesk, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    line-height: 80%;
+    color: rgb(255, 0, 191);
+    animation-name: font-change;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+
+body:has(#index-items-1:hover) .entry-1-preview, body:has(#index-items-2:hover) .entry-2-preview, body:has(#index-items-3:hover) .entry-3-preview, body:has(#index-items-4:hover) .entry-4-preview, body:has(#index-items-5:hover) .entry-5-preview, body:has(#index-items-6:hover) .entry-6-preview{
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
 .circles{
     width: 60%;
     height: 100vh;
     margin-top: 60px;
     margin-left: 60px;
     z-index: 2;
+}
+
+body:has(#index-items-1:hover) .one, body:has(#index-items-2:hover) .two, body:has(#index-items-3:hover) .three, body:has(#index-items-4:hover) .four, body:has(#index-items-5:hover) .five, body:has(#index-items-6:hover) .six{
+    transform: scale(120%);
 }
 
 .reason-circle{
@@ -155,10 +268,8 @@ body{
     }
 }
 
-.one:hover~.text-one, .two:hover~.text-two, .three:hover~.text-three, .four:hover~.text-four, .four:hover~.text-four, .four:hover~.text-four, .five:hover~.text-five, .six:hover~.text-six{
-    display: block;
-    transition: all 1s ease-in-out;
-    opacity: 1;
+body:has(.one:hover) #index-items-1 a, body:has(.two:hover) #index-items-2 a, body:has(.three:hover) #index-items-3 a, body:has(.four:hover) #index-items-4 a, body:has(.five:hover) #index-items-5 a, body:has(.six:hover) #index-items-6 a, body:has(.six:hover) #index-items-6 a{
+    color: white;
 }
 
 .one:hover{
@@ -255,10 +366,7 @@ body{
     }
 }
 
-a{
-    text-decoration: none;
-    color:black;
-}
+
 
 .one:hover ~ .text-one,
 .two:hover ~ .text-two,
@@ -343,7 +451,7 @@ a{
 
 /* Mobile */
 
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     body{
         background-color: black;
         display: block;
@@ -396,14 +504,14 @@ a{
 
     .title{
         position: fixed;
-        bottom: 10px;
+        bottom: 20px;
         right: 10px;
         color: rgb(255, 255, 255);
         font-family: "Playfair Display", serif;
         font-optical-sizing: auto;
         font-weight: 200;
         font-style: normal;
-        font-size: 60px;
+        font-size: 80px;
         height: fit-content;
         margin-left: 10px;
         padding: 0px;
